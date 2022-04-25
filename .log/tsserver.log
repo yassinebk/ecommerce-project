@@ -1,0 +1,519 @@
+Info 0    [04:25:57.427] Starting TS Server
+Info 1    [04:25:57.427] Version: 4.6.3
+Info 2    [04:25:57.427] Arguments: /home/askee/.nvm/versions/node/v16.13.0/bin/node /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/node_modules/typescript/lib/tsserver.js --logFile /home/askee/web-projects/ecommerce-project/.log/tsserver.log --logVerbosity info --cancellationPipeName /tmp/d57a955f7f674a9f2512ffaa47a0fc91/tscancellation*
+Info 3    [04:25:57.427] Platform: linux NodeVersion: 16 CaseSensitive: true
+Info 4    [04:25:57.427] ServerMode: undefined syntaxOnly: false hasUnknownServerMode: undefined
+Info 5    [04:25:57.437] Format host information updated
+Info 6    [04:25:57.465] Search path: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages
+Info 7    [04:25:57.466] For info: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/register.tsx :: Config file name: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 8    [04:25:57.466] Creating configuration project /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 9    [04:25:57.493] Config: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json : {
+ "rootNames": [
+  "/home/askee/web-projects/ecommerce-project/apps/admin-dashboard/next-env.d.ts",
+  "/home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/_app.tsx",
+  "/home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/_document.tsx",
+  "/home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/index.tsx",
+  "/home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/login.tsx",
+  "/home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/register.tsx",
+  "/home/askee/web-projects/ecommerce-project/apps/admin-dashboard/styles/theme.tsx"
+ ],
+ "options": {
+  "target": 1,
+  "lib": [
+   "lib.dom.d.ts",
+   "lib.dom.iterable.d.ts",
+   "lib.esnext.d.ts"
+  ],
+  "allowJs": true,
+  "skipLibCheck": true,
+  "strict": false,
+  "forceConsistentCasingInFileNames": true,
+  "noEmit": true,
+  "incremental": true,
+  "esModuleInterop": true,
+  "module": 99,
+  "moduleResolution": 2,
+  "resolveJsonModule": true,
+  "isolatedModules": true,
+  "jsx": 1,
+  "configFilePath": "/home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json"
+ }
+}
+Info 10   [04:25:57.614] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 11   [04:25:59.535] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 1920.4521380000515ms
+Info 12   [04:25:59.535] Project '/home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json' (Configured)
+Info 13   [04:25:59.535] 	Files (849)
+
+Info 14   [04:25:59.535] -----------------------------------------------
+Info 15   [04:25:59.545] AutoImportProviderProject: found 1 root files in 1 dependencies in 6.059965999913402 ms
+Info 16   [04:25:59.545] Starting updateGraphWorker: Project: /dev/null/autoImportProviderProject1*
+Info 17   [04:25:59.622] Finishing updateGraphWorker: Project: /dev/null/autoImportProviderProject1* Version: 1 structureChanged: true structureIsReused:: Not Elapsed: 76.31825100001879ms
+Info 18   [04:25:59.622] Project '/dev/null/autoImportProviderProject1*' (AutoImportProvider)
+Info 19   [04:25:59.622] 	Files (1)
+
+Info 20   [04:25:59.622] -----------------------------------------------
+Info 21   [04:26:01.751] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 22   [04:26:01.769] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 2 structureChanged: false structureIsReused:: Completely Elapsed: 18.114371000090614ms
+Info 23   [04:26:01.769] Different program with same set of files
+Info 24   [04:26:01.770] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 25   [04:26:01.782] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 3 structureChanged: false structureIsReused:: Completely Elapsed: 11.971723000053316ms
+Info 26   [04:26:01.782] Different program with same set of files
+Info 27   [04:26:02.673] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 28   [04:26:02.685] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 4 structureChanged: false structureIsReused:: Completely Elapsed: 11.157628000015393ms
+Info 29   [04:26:02.685] Different program with same set of files
+Info 30   [04:26:02.742] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 31   [04:26:02.752] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 5 structureChanged: false structureIsReused:: Completely Elapsed: 9.926598999998532ms
+Info 32   [04:26:02.752] Different program with same set of files
+Info 33   [04:26:02.806] forEachExternalModuleToImportFrom autoImportProvider: 0.6871479999972507
+Info 34   [04:26:02.812] forEachExternalModuleToImportFrom autoImportProvider: 0.023191000102087855
+Info 35   [04:26:02.813] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 36   [04:26:02.820] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 6 structureChanged: false structureIsReused:: Completely Elapsed: 6.905157000059262ms
+Info 37   [04:26:02.820] Different program with same set of files
+Info 38   [04:26:02.852] forEachExternalModuleToImportFrom autoImportProvider: 0.08543000009376556
+Info 39   [04:26:02.858] forEachExternalModuleToImportFrom autoImportProvider: 0.024868000065907836
+Info 40   [04:26:02.859] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 41   [04:26:02.867] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 7 structureChanged: false structureIsReused:: Completely Elapsed: 8.028121000039391ms
+Info 42   [04:26:02.867] Different program with same set of files
+Info 43   [04:26:02.900] forEachExternalModuleToImportFrom autoImportProvider: 0.026823999942280352
+Info 44   [04:26:02.905] forEachExternalModuleToImportFrom autoImportProvider: 0.02305199997499585
+Info 45   [04:26:02.906] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 46   [04:26:02.914] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 8 structureChanged: false structureIsReused:: Completely Elapsed: 7.700438999920152ms
+Info 47   [04:26:02.914] Different program with same set of files
+Info 48   [04:26:02.943] forEachExternalModuleToImportFrom autoImportProvider: 0.02640500001143664
+Info 49   [04:26:02.950] forEachExternalModuleToImportFrom autoImportProvider: 0.8279039999470115
+Info 50   [04:26:02.951] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 51   [04:26:02.959] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 9 structureChanged: false structureIsReused:: Completely Elapsed: 8.010447999928147ms
+Info 52   [04:26:02.959] Different program with same set of files
+Info 53   [04:26:02.987] forEachExternalModuleToImportFrom autoImportProvider: 0.02612499997485429
+Info 54   [04:26:03.026] forEachExternalModuleToImportFrom autoImportProvider: 0.027242999989539385
+Info 55   [04:26:03.027] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 56   [04:26:03.034] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 10 structureChanged: false structureIsReused:: Completely Elapsed: 7.168490999960341ms
+Info 57   [04:26:03.034] Different program with same set of files
+Info 58   [04:26:03.473] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 59   [04:26:03.483] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 11 structureChanged: false structureIsReused:: Completely Elapsed: 9.297411000006832ms
+Info 60   [04:26:03.483] Different program with same set of files
+Info 61   [04:26:03.743] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 62   [04:26:03.754] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 12 structureChanged: false structureIsReused:: Completely Elapsed: 10.663951999973506ms
+Info 63   [04:26:03.754] Different program with same set of files
+Info 64   [04:26:03.756] getCompletionData: Get current token: 0.012852999963797629
+Info 65   [04:26:03.756] getCompletionData: Is inside comment: 0.02486699994187802
+Info 66   [04:26:03.756] getCompletionData: Get previous token: 0.037232000031508505
+Info 67   [04:26:03.757] getCompletionsAtPosition: isCompletionListBlocker: 0.2357550000306219
+Info 68   [04:26:03.757] Returning an empty list because completion was requested in an invalid position.
+Info 69   [04:26:04.198] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 70   [04:26:04.214] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 13 structureChanged: false structureIsReused:: Completely Elapsed: 16.018041000002995ms
+Info 71   [04:26:04.214] Different program with same set of files
+Info 72   [04:26:04.891] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 73   [04:26:04.899] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 14 structureChanged: false structureIsReused:: Completely Elapsed: 8.790886999922805ms
+Info 74   [04:26:04.899] Different program with same set of files
+Info 75   [04:26:05.275] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 76   [04:26:05.283] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 15 structureChanged: false structureIsReused:: Completely Elapsed: 8.04532899998594ms
+Info 77   [04:26:05.283] Different program with same set of files
+Info 78   [04:26:05.527] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 79   [04:26:05.535] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 16 structureChanged: false structureIsReused:: Completely Elapsed: 8.31573000003118ms
+Info 80   [04:26:05.535] Different program with same set of files
+Info 81   [04:26:05.952] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 82   [04:26:05.966] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 17 structureChanged: false structureIsReused:: Completely Elapsed: 13.825462999986485ms
+Info 83   [04:26:05.966] Different program with same set of files
+Info 84   [04:26:06.777] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 85   [04:26:06.788] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 18 structureChanged: false structureIsReused:: Completely Elapsed: 10.999604999902658ms
+Info 86   [04:26:06.788] Different program with same set of files
+Info 87   [04:26:32.851] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 88   [04:26:32.866] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 19 structureChanged: false structureIsReused:: Completely Elapsed: 14.765012999996543ms
+Info 89   [04:26:32.866] Different program with same set of files
+Info 90   [04:26:33.918] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 91   [04:26:33.931] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 20 structureChanged: false structureIsReused:: Completely Elapsed: 13.461172000039369ms
+Info 92   [04:26:33.931] Different program with same set of files
+Info 93   [04:26:34.340] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 94   [04:26:34.357] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 21 structureChanged: false structureIsReused:: Completely Elapsed: 16.833237000042573ms
+Info 95   [04:26:34.357] Different program with same set of files
+Info 96   [04:26:34.691] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 97   [04:26:34.698] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 22 structureChanged: false structureIsReused:: Completely Elapsed: 6.89503999997396ms
+Info 98   [04:26:34.698] Different program with same set of files
+Info 99   [04:26:35.436] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 100  [04:26:35.447] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 23 structureChanged: false structureIsReused:: Completely Elapsed: 10.474004999967292ms
+Info 101  [04:26:35.447] Different program with same set of files
+Info 102  [04:26:36.179] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 103  [04:26:36.190] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 24 structureChanged: false structureIsReused:: Completely Elapsed: 10.980195999960415ms
+Info 104  [04:26:36.190] Different program with same set of files
+Info 105  [04:26:36.190] getCompletionData: Get current token: 0.00873100000899285
+Info 106  [04:26:36.190] getCompletionData: Is inside comment: 0.022840999998152256
+Info 107  [04:26:36.190] getCompletionData: Get previous token: 0.042259000008925796
+Info 108  [04:26:36.191] getCompletionsAtPosition: isCompletionListBlocker: 0.16840800002682954
+Info 109  [04:26:36.194] getExportInfoMap: cache miss or empty; calculating new results
+Info 110  [04:26:36.286] forEachExternalModuleToImportFrom autoImportProvider: 4.46278100006748
+Info 111  [04:26:36.286] getExportInfoMap: done in 91.81972799997311 ms
+Info 112  [04:26:36.302] collectAutoImports: resolved 5 module specifiers, plus 0 ambient and -77 from cache
+Info 113  [04:26:36.302] collectAutoImports: response is complete
+Info 114  [04:26:36.302] collectAutoImports: 15.95399800001178
+Info 115  [04:26:36.302] getCompletionData: Semantic work: 111.6364959999919
+Info 116  [04:26:36.319] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 16.302200000034645
+Info 117  [04:26:36.332] getCompletionData: Get current token: 0.020186000037938356
+Info 118  [04:26:36.332] getCompletionData: Is inside comment: 0.021863000001758337
+Info 119  [04:26:36.332] getCompletionData: Get previous token: 0.03240999998524785
+Info 120  [04:26:36.332] getCompletionsAtPosition: isCompletionListBlocker: 0.014180000056512654
+Info 121  [04:26:36.335] getExportInfoMap: cache hit
+Info 122  [04:26:36.344] collectAutoImports: resolved 0 module specifiers, plus 0 ambient and 23 from cache
+Info 123  [04:26:36.344] collectAutoImports: response is complete
+Info 124  [04:26:36.344] collectAutoImports: 9.055481999996118
+Info 125  [04:26:36.344] getCompletionData: Semantic work: 11.593129000044428
+Info 126  [04:26:36.357] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 13.369482000009157
+Info 127  [04:26:36.361] getCompletionData: Get current token: 0.01585600001271814
+Info 128  [04:26:36.361] getCompletionData: Is inside comment: 0.033808000036515296
+Info 129  [04:26:36.361] getCompletionData: Get previous token: 0.05231800000183284
+Info 130  [04:26:36.361] getCompletionsAtPosition: isCompletionListBlocker: 0.07962900004349649
+Info 131  [04:26:36.365] getExportInfoMap: cache hit
+Info 132  [04:26:36.384] collectAutoImports: resolved 0 module specifiers, plus 0 ambient and 23 from cache
+Info 133  [04:26:36.384] collectAutoImports: response is complete
+Info 134  [04:26:36.384] collectAutoImports: 18.577350999927148
+Info 135  [04:26:36.384] getCompletionData: Semantic work: 22.921735999989323
+Info 136  [04:26:36.402] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 17.339889999944717
+Info 137  [04:26:36.406] getCompletionData: Get current token: 0.008522000047378242
+Info 138  [04:26:36.406] getCompletionData: Is inside comment: 0.024237999925389886
+Info 139  [04:26:36.406] getCompletionData: Get previous token: 0.031222999910824
+Info 140  [04:26:36.406] getCompletionsAtPosition: isCompletionListBlocker: 0.01236399996560067
+Info 141  [04:26:36.409] getExportInfoMap: cache hit
+Info 142  [04:26:36.416] collectAutoImports: resolved 0 module specifiers, plus 0 ambient and 23 from cache
+Info 143  [04:26:36.416] collectAutoImports: response is complete
+Info 144  [04:26:36.416] collectAutoImports: 6.905989999999292
+Info 145  [04:26:36.416] getCompletionData: Semantic work: 9.960457000066526
+Info 146  [04:26:36.431] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 15.052515000104904
+Info 147  [04:26:36.435] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 148  [04:26:36.497] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 25 structureChanged: false structureIsReused:: Completely Elapsed: 62.24772200000007ms
+Info 149  [04:26:36.497] Different program with same set of files
+Info 150  [04:26:37.141] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 151  [04:26:37.154] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 26 structureChanged: false structureIsReused:: Completely Elapsed: 13.144620000035502ms
+Info 152  [04:26:37.154] Different program with same set of files
+Info 153  [04:26:37.154] getCompletionData: Get current token: 0.010406999965198338
+Info 154  [04:26:37.154] getCompletionData: Is inside comment: 0.021444000070914626
+Info 155  [04:26:37.155] getCompletionData: Get previous token: 0.03324900008738041
+Info 156  [04:26:37.155] getCompletionsAtPosition: isCompletionListBlocker: 0.012362999957986176
+Info 157  [04:26:37.157] getExportInfoMap: cache hit
+Info 158  [04:26:37.163] collectAutoImports: resolved 0 module specifiers, plus 0 ambient and 0 from cache
+Info 159  [04:26:37.163] collectAutoImports: response is complete
+Info 160  [04:26:37.163] collectAutoImports: 5.386469000019133
+Info 161  [04:26:37.163] getCompletionData: Semantic work: 8.281955000013113
+Info 162  [04:26:37.172] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 8.056060000089929
+Info 163  [04:26:37.212] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 164  [04:26:37.221] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 27 structureChanged: false structureIsReused:: Completely Elapsed: 8.917309000040404ms
+Info 165  [04:26:37.221] Different program with same set of files
+Info 166  [04:26:37.221] getCompletionData: Get current token: 0.007544000050984323
+Info 167  [04:26:37.221] getCompletionData: Is inside comment: 0.016624000039882958
+Info 168  [04:26:37.221] getCompletionData: Get previous token: 0.0300350000616163
+Info 169  [04:26:37.221] getCompletionsAtPosition: isCompletionListBlocker: 0.0125730000436306
+Info 170  [04:26:37.224] getExportInfoMap: cache hit
+Info 171  [04:26:37.227] collectAutoImports: resolved 1 module specifiers, plus 0 ambient and 0 from cache
+Info 172  [04:26:37.227] collectAutoImports: response is complete
+Info 173  [04:26:37.227] collectAutoImports: 3.391907999990508
+Info 174  [04:26:37.227] getCompletionData: Semantic work: 5.822401999961585
+Info 175  [04:26:37.236] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 9.136706999968737
+Info 176  [04:26:37.375] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 177  [04:26:37.381] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 28 structureChanged: false structureIsReused:: Completely Elapsed: 5.43187199998647ms
+Info 178  [04:26:37.381] Different program with same set of files
+Info 179  [04:26:37.381] getCompletionData: Get current token: 0.0076839999528601766
+Info 180  [04:26:37.381] getCompletionData: Is inside comment: 0.017672000103630126
+Info 181  [04:26:37.381] getCompletionData: Get previous token: 0.030943999998271465
+Info 182  [04:26:37.381] getCompletionsAtPosition: isCompletionListBlocker: 0.012362999957986176
+Info 183  [04:26:37.383] getExportInfoMap: cache hit
+Info 184  [04:26:37.389] collectAutoImports: resolved 14 module specifiers, plus 0 ambient and -142 from cache
+Info 185  [04:26:37.389] collectAutoImports: response is complete
+Info 186  [04:26:37.389] collectAutoImports: 5.934790999977849
+Info 187  [04:26:37.389] getCompletionData: Semantic work: 8.020296999951825
+Info 188  [04:26:37.396] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 6.028041000012308
+Info 189  [04:26:37.541] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 190  [04:26:37.546] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 29 structureChanged: false structureIsReused:: Completely Elapsed: 5.263395000016317ms
+Info 191  [04:26:37.546] Different program with same set of files
+Info 192  [04:26:37.546] getCompletionData: Get current token: 0.008171999943442643
+Info 193  [04:26:37.546] getCompletionData: Is inside comment: 0.016974000027403235
+Info 194  [04:26:37.546] getCompletionData: Get previous token: 0.02933699998538941
+Info 195  [04:26:37.547] getCompletionsAtPosition: isCompletionListBlocker: 0.097719999961555
+Info 196  [04:26:37.549] getExportInfoMap: cache hit
+Info 197  [04:26:37.554] collectAutoImports: resolved 3 module specifiers, plus 0 ambient and -15 from cache
+Info 198  [04:26:37.554] collectAutoImports: response is complete
+Info 199  [04:26:37.554] collectAutoImports: 4.716469999984838
+Info 200  [04:26:37.554] getCompletionData: Semantic work: 7.614819000009447
+Info 201  [04:26:37.559] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 5.171820999938063
+Info 202  [04:26:38.885] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 203  [04:26:38.898] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 30 structureChanged: false structureIsReused:: Completely Elapsed: 13.166118999943137ms
+Info 204  [04:26:38.898] Different program with same set of files
+Info 205  [04:26:38.899] getCompletionData: Get current token: 0.007682999945245683
+Info 206  [04:26:38.899] getCompletionData: Is inside comment: 0.01802100008353591
+Info 207  [04:26:38.899] getCompletionData: Get previous token: 0.025705000036396086
+Info 208  [04:26:38.899] getCompletionsAtPosition: isCompletionListBlocker: 0.016204999992623925
+Info 209  [04:26:38.901] getExportInfoMap: cache hit
+Info 210  [04:26:38.905] collectAutoImports: resolved 4 module specifiers, plus 0 ambient and -17 from cache
+Info 211  [04:26:38.905] collectAutoImports: response is complete
+Info 212  [04:26:38.905] collectAutoImports: 3.806112000020221
+Info 213  [04:26:38.905] getCompletionData: Semantic work: 6.2590269999345765
+Info 214  [04:26:38.912] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 5.618155000032857
+Info 215  [04:26:39.043] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 216  [04:26:39.048] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 31 structureChanged: false structureIsReused:: Completely Elapsed: 5.502058000070974ms
+Info 217  [04:26:39.048] Different program with same set of files
+Info 218  [04:26:39.814] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 219  [04:26:39.823] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 32 structureChanged: false structureIsReused:: Completely Elapsed: 9.652526999940164ms
+Info 220  [04:26:39.823] Different program with same set of files
+Info 221  [04:26:42.148] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 222  [04:26:42.160] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 33 structureChanged: false structureIsReused:: Completely Elapsed: 12.348684999975376ms
+Info 223  [04:26:42.160] Different program with same set of files
+Info 224  [04:26:42.161] getCompletionData: Get current token: 0.0033530000364407897
+Info 225  [04:26:42.161] getCompletionData: Is inside comment: 0.00754300004336983
+Info 226  [04:26:42.161] getCompletionData: Get previous token: 0.010128000052645802
+Info 227  [04:26:42.161] getCompletionsAtPosition: isCompletionListBlocker: 0.012991999974474311
+Info 228  [04:26:42.163] getExportInfoMap: cache hit
+Info 229  [04:26:42.188] collectAutoImports: resolved 82 module specifiers, plus 0 ambient and -8148 from cache
+Info 230  [04:26:42.188] collectAutoImports: response is complete
+Info 231  [04:26:42.188] collectAutoImports: 25.736170000047423
+Info 232  [04:26:42.189] getCompletionData: Semantic work: 27.875659000012092
+Info 233  [04:26:42.201] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 12.801238999934867
+Info 234  [04:26:42.214] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 235  [04:26:42.223] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 34 structureChanged: false structureIsReused:: Completely Elapsed: 8.897282999940217ms
+Info 236  [04:26:42.223] Different program with same set of files
+Info 237  [04:26:42.223] getCompletionData: Get current token: 0.003842000034637749
+Info 238  [04:26:42.223] getCompletionData: Is inside comment: 0.011106000049039721
+Info 239  [04:26:42.223] getCompletionData: Get previous token: 0.020816000062040985
+Info 240  [04:26:42.223] getCompletionsAtPosition: isCompletionListBlocker: 0.01704299997072667
+Info 241  [04:26:42.226] getExportInfoMap: cache hit
+Info 242  [04:26:42.240] collectAutoImports: resolved 0 module specifiers, plus 0 ambient and 254 from cache
+Info 243  [04:26:42.240] collectAutoImports: response is complete
+Info 244  [04:26:42.240] collectAutoImports: 13.849609000026248
+Info 245  [04:26:42.240] getCompletionData: Semantic work: 16.722027999931015
+Info 246  [04:26:42.253] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 12.785452999989502
+Info 247  [04:26:42.294] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 248  [04:26:42.300] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 35 structureChanged: false structureIsReused:: Completely Elapsed: 5.685954999993555ms
+Info 249  [04:26:42.300] Different program with same set of files
+Info 250  [04:26:42.300] getCompletionData: Get current token: 0.003282999969087541
+Info 251  [04:26:42.300] getCompletionData: Is inside comment: 0.007544000050984323
+Info 252  [04:26:42.300] getCompletionData: Get previous token: 0.011036999989300966
+Info 253  [04:26:42.300] getCompletionsAtPosition: isCompletionListBlocker: 0.012013999978080392
+Info 254  [04:26:42.303] getExportInfoMap: cache hit
+Info 255  [04:26:42.307] collectAutoImports: resolved 0 module specifiers, plus 0 ambient and 28 from cache
+Info 256  [04:26:42.307] collectAutoImports: response is complete
+Info 257  [04:26:42.307] collectAutoImports: 3.544160999939777
+Info 258  [04:26:42.307] getCompletionData: Semantic work: 6.7116940000560135
+Info 259  [04:26:42.317] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 9.868750000023283
+Info 260  [04:26:42.436] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 261  [04:26:42.441] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 36 structureChanged: false structureIsReused:: Completely Elapsed: 5.4993170000379905ms
+Info 262  [04:26:42.441] Different program with same set of files
+Info 263  [04:26:42.441] getCompletionData: Get current token: 0.002934000105597079
+Info 264  [04:26:42.441] getCompletionData: Is inside comment: 0.006636000005528331
+Info 265  [04:26:42.441] getCompletionData: Get previous token: 0.010756999952718616
+Info 266  [04:26:42.442] getCompletionsAtPosition: isCompletionListBlocker: 0.012712999945506454
+Info 267  [04:26:42.444] getExportInfoMap: cache hit
+Info 268  [04:26:42.447] collectAutoImports: resolved 0 module specifiers, plus 0 ambient and 7 from cache
+Info 269  [04:26:42.447] collectAutoImports: response is complete
+Info 270  [04:26:42.447] collectAutoImports: 3.074912999989465
+Info 271  [04:26:42.447] getCompletionData: Semantic work: 5.926936000003479
+Info 272  [04:26:42.455] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 7.067785999970511
+Info 273  [04:26:42.486] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 274  [04:26:42.492] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 37 structureChanged: false structureIsReused:: Completely Elapsed: 5.50609199993778ms
+Info 275  [04:26:42.492] Different program with same set of files
+Info 276  [04:26:42.492] getCompletionData: Get current token: 0.0034230001037940383
+Info 277  [04:26:42.492] getCompletionData: Is inside comment: 0.00712500000372529
+Info 278  [04:26:42.492] getCompletionData: Get previous token: 0.00998900004196912
+Info 279  [04:26:42.492] getCompletionsAtPosition: isCompletionListBlocker: 0.011805000016465783
+Info 280  [04:26:42.494] getExportInfoMap: cache hit
+Info 281  [04:26:42.497] collectAutoImports: resolved 0 module specifiers, plus 0 ambient and 2 from cache
+Info 282  [04:26:42.497] collectAutoImports: response is complete
+Info 283  [04:26:42.497] collectAutoImports: 2.932909000082873
+Info 284  [04:26:42.497] getCompletionData: Semantic work: 4.615651999949478
+Info 285  [04:26:42.503] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 6.367266000015661
+Info 286  [04:26:43.052] Format host information updated
+Info 287  [04:26:43.052] Format host information updated
+Info 288  [04:26:43.052] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 289  [04:26:43.058] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 38 structureChanged: false structureIsReused:: Completely Elapsed: 5.3936300000641495ms
+Info 290  [04:26:43.058] Different program with same set of files
+Info 291  [04:26:43.058] getCompletionData: Get current token: 0.016275000059977174
+Info 292  [04:26:43.058] getCompletionData: Is inside comment: 0.007684000069275498
+Info 293  [04:26:43.058] getCompletionData: Get previous token: 0.017182999989017844
+Info 294  [04:26:43.058] getCompletionsAtPosition: isCompletionListBlocker: 0.013411000021733344
+Info 295  [04:26:43.060] getCompletionData: Semantic work: 1.9089839999796823
+Info 296  [04:26:43.068] getCompletionData: Get current token: 0.012503000092692673
+Info 297  [04:26:43.068] getCompletionData: Is inside comment: 0.006216999958269298
+Info 298  [04:26:43.068] getCompletionData: Get previous token: 0.024517999961972237
+Info 299  [04:26:43.068] getCompletionsAtPosition: isCompletionListBlocker: 0.011805000016465783
+Info 300  [04:26:43.070] getCompletionData: Semantic work: 2.1399760000640526
+Info 301  [04:26:43.566] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 302  [04:26:43.577] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 39 structureChanged: false structureIsReused:: Completely Elapsed: 11.34172300004866ms
+Info 303  [04:26:43.577] Different program with same set of files
+Info 304  [04:26:45.711] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 305  [04:26:45.726] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 40 structureChanged: false structureIsReused:: Completely Elapsed: 15.206527999951504ms
+Info 306  [04:26:45.726] Different program with same set of files
+Info 307  [04:26:45.800] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 308  [04:26:45.806] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 41 structureChanged: false structureIsReused:: Completely Elapsed: 6.092390000005253ms
+Info 309  [04:26:45.806] Different program with same set of files
+Info 310  [04:26:46.016] Format host information updated
+Info 311  [04:26:46.227] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 312  [04:26:46.240] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 42 structureChanged: false structureIsReused:: Completely Elapsed: 13.27273999992758ms
+Info 313  [04:26:46.240] Different program with same set of files
+Info 314  [04:26:52.930] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 315  [04:26:52.944] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 43 structureChanged: false structureIsReused:: Completely Elapsed: 14.171620000037365ms
+Info 316  [04:26:52.944] Different program with same set of files
+Info 317  [04:26:52.945] getCompletionData: Get current token: 0.012852000072598457
+Info 318  [04:26:52.945] getCompletionData: Is inside comment: 0.00426099996548146
+Info 319  [04:26:52.945] getCompletionData: Get previous token: 0.06160700006876141
+Info 320  [04:26:52.945] getCompletionsAtPosition: isCompletionListBlocker: 0.014597999979741871
+Info 321  [04:26:53.006] getCompletionData: Semantic work: 61.06822599994484
+Info 322  [04:26:53.023] getCompletionsAtPosition: getCompletionEntriesFromSymbols: 16.380851999972947
+Info 323  [04:26:53.448] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 324  [04:26:53.456] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 44 structureChanged: false structureIsReused:: Completely Elapsed: 7.206501999986358ms
+Info 325  [04:26:53.456] Different program with same set of files
+Info 326  [04:26:53.586] Format host information updated
+Info 327  [04:26:53.586] Format host information updated
+Info 328  [04:26:53.586] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 329  [04:26:53.595] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 45 structureChanged: false structureIsReused:: Completely Elapsed: 8.460007000016049ms
+Info 330  [04:26:53.595] Different program with same set of files
+Info 331  [04:26:53.595] getCompletionData: Get current token: 0.04065199999604374
+Info 332  [04:26:53.595] getCompletionData: Is inside comment: 0.01061699993442744
+Info 333  [04:26:53.595] getCompletionData: Get previous token: 0.06244499993044883
+Info 334  [04:26:53.595] getCompletionsAtPosition: isCompletionListBlocker: 0.012433000025339425
+Info 335  [04:26:53.630] getCompletionData: Semantic work: 34.61499999999069
+Info 336  [04:26:53.635] getCompletionData: Get current token: 0.024516999954357743
+Info 337  [04:26:53.635] getCompletionData: Is inside comment: 0.006634999997913837
+Info 338  [04:26:53.635] getCompletionData: Get previous token: 0.053293999982997775
+Info 339  [04:26:53.635] getCompletionsAtPosition: isCompletionListBlocker: 0.012362999957986176
+Info 340  [04:26:53.638] getCompletionData: Semantic work: 2.411318000056781
+Info 341  [04:28:17.262] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 342  [04:28:17.289] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 46 structureChanged: false structureIsReused:: Completely Elapsed: 26.907777999993414ms
+Info 343  [04:28:17.289] Different program with same set of files
+Info 344  [04:28:21.670] Format host information updated
+Info 345  [04:28:21.889] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 346  [04:28:21.906] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 47 structureChanged: false structureIsReused:: Completely Elapsed: 16.42536300001666ms
+Info 347  [04:28:21.906] Different program with same set of files
+Info 348  [04:28:23.111] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 349  [04:28:23.123] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 48 structureChanged: false structureIsReused:: Completely Elapsed: 12.578668999951333ms
+Info 350  [04:28:23.123] Different program with same set of files
+Info 351  [04:28:23.535] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 352  [04:28:23.549] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 49 structureChanged: false structureIsReused:: Completely Elapsed: 13.557557000080124ms
+Info 353  [04:28:23.549] Different program with same set of files
+Info 354  [04:28:25.910] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 355  [04:28:25.920] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 50 structureChanged: false structureIsReused:: Completely Elapsed: 10.220949999988079ms
+Info 356  [04:28:25.920] Different program with same set of files
+Info 357  [04:29:19.705] FileWatcher:: Triggered with /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/register.tsx 1:: WatchInfo: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/register.tsx 500 undefined WatchType: Closed Script info
+Info 358  [04:29:19.706] Elapsed:: 0.46740399999544024ms FileWatcher:: Triggered with /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/register.tsx 1:: WatchInfo: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/register.tsx 500 undefined WatchType: Closed Script info
+Info 359  [04:29:19.957] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 360  [04:29:19.965] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 51 structureChanged: false structureIsReused:: Completely Elapsed: 8.491924999980256ms
+Info 361  [04:29:19.965] Different program with same set of files
+Info 362  [04:29:53.721] FileWatcher:: Triggered with /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/register.tsx 1:: WatchInfo: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/register.tsx 500 undefined WatchType: Closed Script info
+Info 363  [04:29:53.721] Elapsed:: 0.13769100001081824ms FileWatcher:: Triggered with /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/register.tsx 1:: WatchInfo: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/register.tsx 500 undefined WatchType: Closed Script info
+Info 364  [04:29:53.972] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 365  [04:29:53.992] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 52 structureChanged: false structureIsReused:: Completely Elapsed: 20.517300000065006ms
+Info 366  [04:29:53.992] Different program with same set of files
+Info 367  [04:30:03.727] FileWatcher:: Triggered with /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/register.tsx 1:: WatchInfo: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/register.tsx 500 undefined WatchType: Closed Script info
+Info 368  [04:30:03.727] Elapsed:: 0.10529500001575798ms FileWatcher:: Triggered with /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/register.tsx 1:: WatchInfo: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/register.tsx 500 undefined WatchType: Closed Script info
+Info 369  [04:30:03.977] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 370  [04:30:03.985] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 53 structureChanged: false structureIsReused:: Completely Elapsed: 7.9036680000135675ms
+Info 371  [04:30:03.985] Different program with same set of files
+Info 372  [04:30:06.208] Search path: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages
+Info 373  [04:30:06.209] For info: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/pages/register.tsx :: Config file name: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 374  [04:30:06.752] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 375  [04:30:06.761] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 54 structureChanged: false structureIsReused:: Completely Elapsed: 8.890336000011303ms
+Info 376  [04:30:06.761] Different program with same set of files
+Info 377  [04:30:06.762] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 378  [04:30:06.771] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 55 structureChanged: false structureIsReused:: Completely Elapsed: 9.187229000031948ms
+Info 379  [04:30:06.771] Different program with same set of files
+Info 380  [04:30:06.772] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 381  [04:30:06.778] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 56 structureChanged: false structureIsReused:: Completely Elapsed: 6.377003000001423ms
+Info 382  [04:30:06.778] Different program with same set of files
+Info 383  [04:30:06.814] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 384  [04:30:06.821] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 57 structureChanged: false structureIsReused:: Completely Elapsed: 6.93517900002189ms
+Info 385  [04:30:06.821] Different program with same set of files
+Info 386  [04:30:06.848] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 387  [04:30:06.858] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 58 structureChanged: false structureIsReused:: Completely Elapsed: 9.610296000028029ms
+Info 388  [04:30:06.858] Different program with same set of files
+Info 389  [04:30:06.858] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 390  [04:30:06.866] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 59 structureChanged: false structureIsReused:: Completely Elapsed: 7.390713999979198ms
+Info 391  [04:30:06.866] Different program with same set of files
+Info 392  [04:30:06.867] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 393  [04:30:06.873] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 60 structureChanged: false structureIsReused:: Completely Elapsed: 6.027949999901466ms
+Info 394  [04:30:06.873] Different program with same set of files
+Info 395  [04:30:06.881] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 396  [04:30:06.887] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 61 structureChanged: false structureIsReused:: Completely Elapsed: 5.764362999936566ms
+Info 397  [04:30:06.887] Different program with same set of files
+Info 398  [04:30:06.916] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 399  [04:30:06.922] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 62 structureChanged: false structureIsReused:: Completely Elapsed: 5.554260000004433ms
+Info 400  [04:30:06.922] Different program with same set of files
+Info 401  [04:30:06.950] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 402  [04:30:06.956] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 63 structureChanged: false structureIsReused:: Completely Elapsed: 5.662489000009373ms
+Info 403  [04:30:06.956] Different program with same set of files
+Info 404  [04:30:06.985] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 405  [04:30:06.991] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 64 structureChanged: false structureIsReused:: Completely Elapsed: 5.290324000059627ms
+Info 406  [04:30:06.991] Different program with same set of files
+Info 407  [04:30:07.088] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 408  [04:30:07.094] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 65 structureChanged: false structureIsReused:: Completely Elapsed: 5.455677999998443ms
+Info 409  [04:30:07.094] Different program with same set of files
+Info 410  [04:30:07.187] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 411  [04:30:07.195] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 66 structureChanged: false structureIsReused:: Completely Elapsed: 8.365063000004739ms
+Info 412  [04:30:07.196] Different program with same set of files
+Info 413  [04:30:07.220] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 414  [04:30:07.229] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 67 structureChanged: false structureIsReused:: Completely Elapsed: 8.502267999923788ms
+Info 415  [04:30:07.229] Different program with same set of files
+Info 416  [04:30:07.254] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 417  [04:30:07.263] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 68 structureChanged: false structureIsReused:: Completely Elapsed: 9.143607000005431ms
+Info 418  [04:30:07.263] Different program with same set of files
+Info 419  [04:30:07.356] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 420  [04:30:07.363] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 69 structureChanged: false structureIsReused:: Completely Elapsed: 6.326462000026368ms
+Info 421  [04:30:07.363] Different program with same set of files
+Info 422  [04:30:07.389] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 423  [04:30:07.395] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 70 structureChanged: false structureIsReused:: Completely Elapsed: 5.9427750000031665ms
+Info 424  [04:30:07.395] Different program with same set of files
+Info 425  [04:30:07.421] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 426  [04:30:07.431] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 71 structureChanged: false structureIsReused:: Completely Elapsed: 9.27683300001081ms
+Info 427  [04:30:07.431] Different program with same set of files
+Info 428  [04:30:07.518] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 429  [04:30:07.525] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 72 structureChanged: false structureIsReused:: Completely Elapsed: 7.100747999968007ms
+Info 430  [04:30:07.525] Different program with same set of files
+Info 431  [04:30:07.551] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 432  [04:30:07.559] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 73 structureChanged: false structureIsReused:: Completely Elapsed: 8.230999000021257ms
+Info 433  [04:30:07.559] Different program with same set of files
+Info 434  [04:30:07.584] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 435  [04:30:07.591] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 74 structureChanged: false structureIsReused:: Completely Elapsed: 6.514430000097491ms
+Info 436  [04:30:07.591] Different program with same set of files
+Info 437  [04:30:07.679] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 438  [04:30:07.688] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 75 structureChanged: false structureIsReused:: Completely Elapsed: 9.320891999988817ms
+Info 439  [04:30:07.688] Different program with same set of files
+Info 440  [04:30:07.689] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 441  [04:30:07.695] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 76 structureChanged: false structureIsReused:: Completely Elapsed: 6.0258669999893755ms
+Info 442  [04:30:07.695] Different program with same set of files
+Info 443  [04:30:07.949] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 444  [04:30:07.954] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 77 structureChanged: false structureIsReused:: Completely Elapsed: 5.295501000015065ms
+Info 445  [04:30:07.954] Different program with same set of files
+Info 446  [04:30:08.208] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 447  [04:30:08.213] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 78 structureChanged: false structureIsReused:: Completely Elapsed: 5.208300999947824ms
+Info 448  [04:30:08.213] Different program with same set of files
+Info 449  [04:30:08.215] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 450  [04:30:08.220] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 79 structureChanged: false structureIsReused:: Completely Elapsed: 4.955883999937214ms
+Info 451  [04:30:08.220] Different program with same set of files
+Info 452  [04:30:08.236] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 453  [04:30:08.241] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 80 structureChanged: false structureIsReused:: Completely Elapsed: 4.919015999999829ms
+Info 454  [04:30:08.241] Different program with same set of files
+Info 455  [04:30:08.267] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 456  [04:30:08.273] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 81 structureChanged: false structureIsReused:: Completely Elapsed: 5.194195999996737ms
+Info 457  [04:30:08.273] Different program with same set of files
+Info 458  [04:30:08.277] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 459  [04:30:08.283] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 82 structureChanged: false structureIsReused:: Completely Elapsed: 5.46825799997896ms
+Info 460  [04:30:08.283] Different program with same set of files
+Info 461  [04:30:08.296] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 462  [04:30:08.301] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 83 structureChanged: false structureIsReused:: Completely Elapsed: 5.058246999979019ms
+Info 463  [04:30:08.301] Different program with same set of files
+Info 464  [04:30:08.331] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 465  [04:30:08.336] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 84 structureChanged: false structureIsReused:: Completely Elapsed: 5.253197000012733ms
+Info 466  [04:30:08.336] Different program with same set of files
+Info 467  [04:30:08.398] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 468  [04:30:08.403] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 85 structureChanged: false structureIsReused:: Completely Elapsed: 5.5204170000506565ms
+Info 469  [04:30:08.403] Different program with same set of files
+Info 470  [04:30:08.601] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 471  [04:30:08.609] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 86 structureChanged: false structureIsReused:: Completely Elapsed: 8.446912999963388ms
+Info 472  [04:30:08.609] Different program with same set of files
+Info 473  [04:30:08.876] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 474  [04:30:08.889] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 87 structureChanged: false structureIsReused:: Completely Elapsed: 12.325609999941662ms
+Info 475  [04:30:08.889] Different program with same set of files
+Info 476  [04:30:09.470] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 477  [04:30:09.476] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 88 structureChanged: false structureIsReused:: Completely Elapsed: 5.934070999966934ms
+Info 478  [04:30:09.476] Different program with same set of files
+Info 479  [04:30:10.110] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 480  [04:30:10.122] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 89 structureChanged: false structureIsReused:: Completely Elapsed: 12.774284000042826ms
+Info 481  [04:30:10.123] Different program with same set of files
+Info 482  [04:30:10.425] Format host information updated
+Info 483  [04:30:10.634] Starting updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json
+Info 484  [04:30:10.642] Finishing updateGraphWorker: Project: /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/tsconfig.json Version: 90 structureChanged: false structureIsReused:: Completely Elapsed: 8.384942000033334ms
+Info 485  [04:30:10.642] Different program with same set of files

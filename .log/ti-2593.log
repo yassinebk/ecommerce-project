@@ -1,0 +1,52 @@
+[04:25:57.553] Global cache location '/home/askee/.cache/typescript/4.6', safe file path '/home/askee/web-projects/ecommerce-project/apps/admin-dashboard/node_modules/typescript/lib/typingSafeList.json', types map path /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/node_modules/typescript/lib/typesMap.json
+[04:25:57.554] Processing cache location '/home/askee/.cache/typescript/4.6'
+[04:25:57.554] Trying to find '/home/askee/.cache/typescript/4.6/package.json'...
+[04:25:57.556] Loaded content of '/home/askee/.cache/typescript/4.6/package.json': {"private":true,"dependencies":{"types-registry":"^0.1.589"},"devDependencies":{"@types/babel__core":"^7.1.19","@types/bcrypt":"^5.0.0","@types/eslint":"^8.4.1","@types/eslint-config-prettier":"^6.11.0","@types/eslint-plugin-prettier":"^3.1.0","@types/graphql-upload":"^8.0.11","@types/gulp":"^4.0.9","@types/lodash":"^4.14.182","@types/node-sass":"^4.11.2","@types/nodemailer":"^6.4.4","@types/passport":"^1.0.7","@types/passport-jwt":"^3.0.6","@types/passport-local":"^1.0.34","@types/pg":"^8.6.5","@types/prettier":"^2.6.0","@types/react":"^18.0.6","@types/react-big-calendar":"^0.38.0","@types/react-dom":"^18.0.2","@types/react-router":"^5.1.18","@types/react-router-dom":"^5.3.3","@types/react-swipeable-views":"^0.13.1","@types/react-table":"^7.7.11","@types/react-tagsinput":"^3.19.9","@types/rimraf":"^3.0.2","@types/source-map-support":"^0.5.4","@types/styled-components":"^5.1.25","@types/stylis":"^4.0.2","@types/supertest":"^2.0.12","@types/validator":"^13.7.1","@types/ws":"^8.5.3"}}
+[04:25:57.556] Loaded content of '/home/askee/.cache/typescript/4.6/package-lock.json'
+[04:25:57.565] Adding entry into typings cache: 'babel__core' => '/home/askee/.cache/typescript/4.6/node_modules/@types/babel__core/index.d.ts'
+[04:25:57.567] Adding entry into typings cache: 'bcrypt' => '/home/askee/.cache/typescript/4.6/node_modules/@types/bcrypt/index.d.ts'
+[04:25:57.568] Adding entry into typings cache: 'eslint' => '/home/askee/.cache/typescript/4.6/node_modules/@types/eslint/index.d.ts'
+[04:25:57.568] Adding entry into typings cache: 'eslint-config-prettier' => '/home/askee/.cache/typescript/4.6/node_modules/@types/eslint-config-prettier/index.d.ts'
+[04:25:57.569] Adding entry into typings cache: 'eslint-plugin-prettier' => '/home/askee/.cache/typescript/4.6/node_modules/@types/eslint-plugin-prettier/index.d.ts'
+[04:25:57.570] Adding entry into typings cache: 'graphql-upload' => '/home/askee/.cache/typescript/4.6/node_modules/@types/graphql-upload/index.d.ts'
+[04:25:57.570] Adding entry into typings cache: 'gulp' => '/home/askee/.cache/typescript/4.6/node_modules/@types/gulp/index.d.ts'
+[04:25:57.571] Adding entry into typings cache: 'lodash' => '/home/askee/.cache/typescript/4.6/node_modules/@types/lodash/index.d.ts'
+[04:25:57.572] Adding entry into typings cache: 'node-sass' => '/home/askee/.cache/typescript/4.6/node_modules/@types/node-sass/index.d.ts'
+[04:25:57.573] Adding entry into typings cache: 'nodemailer' => '/home/askee/.cache/typescript/4.6/node_modules/@types/nodemailer/index.d.ts'
+[04:25:57.575] Adding entry into typings cache: 'passport' => '/home/askee/.cache/typescript/4.6/node_modules/@types/passport/index.d.ts'
+[04:25:57.576] Adding entry into typings cache: 'passport-jwt' => '/home/askee/.cache/typescript/4.6/node_modules/@types/passport-jwt/index.d.ts'
+[04:25:57.577] Adding entry into typings cache: 'passport-local' => '/home/askee/.cache/typescript/4.6/node_modules/@types/passport-local/index.d.ts'
+[04:25:57.577] Adding entry into typings cache: 'pg' => '/home/askee/.cache/typescript/4.6/node_modules/@types/pg/index.d.ts'
+[04:25:57.578] Adding entry into typings cache: 'prettier' => '/home/askee/.cache/typescript/4.6/node_modules/@types/prettier/index.d.ts'
+[04:25:57.579] Adding entry into typings cache: 'react' => '/home/askee/.cache/typescript/4.6/node_modules/@types/react/index.d.ts'
+[04:25:57.581] Adding entry into typings cache: 'react-big-calendar' => '/home/askee/.cache/typescript/4.6/node_modules/@types/react-big-calendar/index.d.ts'
+[04:25:57.582] Adding entry into typings cache: 'react-dom' => '/home/askee/.cache/typescript/4.6/node_modules/@types/react-dom/index.d.ts'
+[04:25:57.584] Adding entry into typings cache: 'react-router' => '/home/askee/.cache/typescript/4.6/node_modules/@types/react-router/index.d.ts'
+[04:25:57.584] Adding entry into typings cache: 'react-router-dom' => '/home/askee/.cache/typescript/4.6/node_modules/@types/react-router-dom/index.d.ts'
+[04:25:57.585] Adding entry into typings cache: 'react-swipeable-views' => '/home/askee/.cache/typescript/4.6/node_modules/@types/react-swipeable-views/index.d.ts'
+[04:25:57.585] Adding entry into typings cache: 'react-table' => '/home/askee/.cache/typescript/4.6/node_modules/@types/react-table/index.d.ts'
+[04:25:57.586] Adding entry into typings cache: 'react-tagsinput' => '/home/askee/.cache/typescript/4.6/node_modules/@types/react-tagsinput/index.d.ts'
+[04:25:57.586] Adding entry into typings cache: 'rimraf' => '/home/askee/.cache/typescript/4.6/node_modules/@types/rimraf/index.d.ts'
+[04:25:57.587] Adding entry into typings cache: 'source-map-support' => '/home/askee/.cache/typescript/4.6/node_modules/@types/source-map-support/index.d.ts'
+[04:25:57.587] Adding entry into typings cache: 'styled-components' => '/home/askee/.cache/typescript/4.6/node_modules/@types/styled-components/index.d.ts'
+[04:25:57.587] Adding entry into typings cache: 'stylis' => '/home/askee/.cache/typescript/4.6/node_modules/@types/stylis/index.d.ts'
+[04:25:57.588] Adding entry into typings cache: 'supertest' => '/home/askee/.cache/typescript/4.6/node_modules/@types/supertest/index.d.ts'
+[04:25:57.588] Adding entry into typings cache: 'validator' => '/home/askee/.cache/typescript/4.6/node_modules/@types/validator/index.d.ts'
+[04:25:57.589] Adding entry into typings cache: 'ws' => '/home/askee/.cache/typescript/4.6/node_modules/@types/ws/index.d.ts'
+[04:25:57.589] Finished processing cache location '/home/askee/.cache/typescript/4.6'
+[04:25:57.589] Process id: 2607
+[04:25:57.589] NPM location: /home/askee/.nvm/versions/node/v16.13.0/bin/npm (explicit '--npmLocation' not  provided)
+[04:25:57.589] validateDefaultNpmLocation: false
+[04:25:57.589] Npm config file: /home/askee/.cache/typescript/4.6/package.json
+[04:25:57.589] Updating types-registry npm package...
+[04:25:57.589] Exec: /home/askee/.nvm/versions/node/v16.13.0/bin/npm install --ignore-scripts types-registry@latest
+[04:25:58.513]     Succeeded. stdout:
+    
+    up to date, audited 108 packages in 829ms
+
+2 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+[04:25:58.513] Updated types-registry npm package

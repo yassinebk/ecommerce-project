@@ -1,0 +1,293 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Category {
+  categoryId: Int
+  createdAt: DateTime!
+  products: [GenericProduct!]
+  title: String!
+  updatedAt: DateTime!
+}
+
+input CreateAuthInput {
+  confirmPassword: String!
+  email: String!
+  password: String!
+}
+
+input CreateCategoryInput {
+  title: String!
+}
+
+input CreateGenericProductInput {
+  basePrice: Float!
+  categories: [Int!]!
+  description: String!
+  name: String!
+}
+
+input CreateOrderInput {
+  products: [ProductInOrder!]!
+  user: Int!
+}
+
+input CreateProductVariantInput {
+  color: String!
+  genericProductId: Int!
+  imageLinks: [String!]!
+  price: Float
+}
+
+input CreateUserInput {
+  confirmPassword: String!
+  email: String!
+  password: String!
+}
+
+"""
+A date-time string at UTC, such as 2019-12-03T09:54:33Z, compliant with the date-time format.
+"""
+scalar DateTime
+
+type Discount {
+  createdAt: DateTime!
+  discountId: Float!
+  discountValue: Float!
+  discountedProducts: [GenericProduct!]!
+  endDate: DateTime!
+  startDate: DateTime!
+  updatedAt: DateTime!
+}
+
+input FindAllInput {
+  field: String!
+  order: ResultOrderBy!
+}
+
+input FindOneCategoryInput {
+  id: Int!
+  title: String
+}
+
+type GenericProduct {
+  basePrice: Float!
+  categories: [Category!]
+  createdAt: DateTime!
+  description: String!
+  discount: Discount
+  genericProductId: Int!
+  name: String!
+  productVariants: [ProductVariant!]
+  updatedAt: DateTime
+}
+
+type ImageLink {
+  image: String!
+  imageLinkId: Float!
+  productVariant: ProductVariant!
+}
+
+input LoginInput {
+  email: String!
+  password: String!
+}
+
+type LoginResponse {
+  access_token: String!
+  refresh_token: String!
+  user: User!
+}
+
+type Mutation {
+  addCategoryToProduct(categoryId: Int!, genericProductId: Int!): GenericProduct!
+  bulkCreateCategories(categories: [String!]!): [Category!]!
+  confirmEmail(confirmationToken: String!): Boolean!
+  createCategory(createCategoryInput: CreateCategoryInput!): Category!
+  createGenericProduct(createProductInput: CreateGenericProductInput!): GenericProduct!
+  createOrder(createOrderInput: CreateOrderInput!): Order!
+  createProductVariant(createProductInput: CreateProductVariantInput!): ProductVariant!
+  createUser(createUserInput: CreateUserInput!): User!
+  register(registerInput: CreateAuthInput!): User!
+  removeCategory(id: Int!): Category!
+  removeCategoryFromProduct(categoryId: Int!, genericProductId: Float!): GenericProduct!
+  removeGenericProduct(id: Int!): GenericProduct!
+  removeOrderAdmin(id: Int!): Order!
+  removeOrderUser(id: Int!): Order!
+  removeProductVariant(id: Int!): ProductVariant!
+  removeUser(id: Int!): User!
+  updateCategory(updateCategoryInput: UpdateCategoryInput!): Category!
+  updateGenericProduct(updateProductInput: UpdateGenericProductInput!): GenericProduct!
+  updateOrder(updateOrderInput: UpdateOrderInput!): Order!
+  updateProductVariant(updateProductInput: UpdateProductVariant!): ProductVariant!
+  updateProductVariantQty(updateProductVariatnQty: updateProductVariantQty!): ProductVariant!
+  updateUserEmail(updateUserInput: UpdateUserEmailInput!): User!
+  updateUserPassword(updateUserInput: UpdateUserPasswordInput!): User!
+  uploadFile(file: Upload!): String!
+}
+
+type Order {
+  createdAt: DateTime!
+  orderId: Int!
+  orderProducts: [OrderProduct!]!
+  state: OrderState!
+  updatedAt: DateTime
+  user: User!
+}
+
+type OrderProduct {
+  currentOrder: Order!
+
+  """Example field (placeholder)"""
+  orderProductId: Int!
+  productVariant: ProductVariant!
+  quantity: Int!
+  sizeId: Int
+}
+
+"""The state of an orded"""
+enum OrderState {
+  CANCELED
+  CONFIRMED
+  PENDING
+  SETTLED
+}
+
+input ProductInOrder {
+  productVariantId: Int!
+  quantity: Int!
+  size: String!
+}
+
+type ProductVariant {
+  color: String!
+  createdAt: DateTime!
+  genericProduct: GenericProduct!
+  imageLinks: [ImageLink!]!
+  price: Float!
+  productVariantId: Int
+  sizeQty: [ProductVariantSize!]!
+  updatedAt: DateTime
+}
+
+type ProductVariantSize {
+  productVariantId: Int!
+  quantity: Int!
+  size: String!
+  sizeQtyId: Int!
+}
+
+type Query {
+  findAllCategories(findAllInput: FindAllInput): [Category!]!
+  findAllGenericProducts(findAllInput: FindAllInput = {field: "createdAt", order: DESC}): [GenericProduct!]!
+  findAllOrders: [Order!]!
+  findAllOrdersForOneUser: [Order!]!
+  findAllOrdersForOneUserAdmin(userId: Int!): [Order!]!
+  findAllProductVariants(findAllInput: FindAllInput = {field: "createdAt", order: DESC}): [ProductVariant!]!
+  findOneCategory(findOneInput: FindOneCategoryInput!): Category!
+  findOneGenericProduct(id: Int!): GenericProduct!
+  findOneOrderAdmin(id: Int!): Order!
+  findOneOrderUser: Order!
+  findOneProductVariant(id: Int!): ProductVariant!
+  login(loginUserInput: LoginInput!): LoginResponse!
+  refreshToken(refreshTokenInput: UpdateUserRefreshTokenInput!): Tokens!
+  user(id: Int!): User!
+}
+
+"""How to order result"""
+enum ResultOrderBy {
+  ASC
+  DESC
+}
+
+"""The state of an orded"""
+enum Role {
+  ADMIN
+  CUSTOMER
+  DEV
+}
+
+type Tokens {
+  access_token: String!
+  refresh_token: String!
+}
+
+input UpdateCategoryInput {
+  id: Int!
+  title: String!
+}
+
+input UpdateGenericProductInput {
+  basePrice: Float
+  categories: [String!]
+  description: String
+  id: Float!
+  name: String!
+}
+
+input UpdateOrderInput {
+  id: Int!
+  products: [ProductInOrder!]
+  state: OrderState!
+  user: Int
+}
+
+input UpdateProductVariant {
+  categories: [String!]
+  color: String
+  genericProductId: Int
+  id: Int!
+  imageLinks: [String!]
+  price: Float
+  qty: Int
+  sizes: [String!]
+}
+
+input UpdateUserEmailInput {
+  email: String!
+  id: Int!
+}
+
+input UpdateUserPasswordInput {
+  id: Int!
+  password: String!
+}
+
+input UpdateUserRefreshTokenInput {
+  id: Int!
+  refreshToken: String!
+}
+
+"""The `Upload` scalar type represents a file upload."""
+scalar Upload
+
+type User {
+  createdAt: DateTime!
+  email: String!
+  hashedPassword: String
+  infos: UserBasicInfo
+  isVerified: Boolean!
+  lastSeen: DateTime
+  orders: [Order!]!
+  refreshToken: String
+  role: Role!
+  updatedAt: DateTime
+  userId: Int!
+}
+
+type UserBasicInfo {
+  address: String!
+  branch: String!
+  firstName: String!
+  lastName: String!
+  phoneNumber: String!
+  socialLinkProfile: String
+  user: User!
+  userBasicInfoId: Int!
+}
+
+input updateProductVariantQty {
+  productVariantId: Int!
+  quantity: Int!
+  size: String!
+}

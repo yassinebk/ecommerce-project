@@ -1,0 +1,30 @@
+{
+  "sqltools.connections": [
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "localhost",
+      "port": 3306,
+      "askForPassword": true,
+      "driver": "MySQL",
+      "name": "root",
+      "database": "SCHOOL",
+      "username": "root"
+    },
+    {
+      "mysqlOptions": {
+        "authProtocol": "default"
+      },
+      "previewLimit": 50,
+      "server": "127.0.0.1",
+      "port": 3306,
+      "driver": "MySQL",
+      "database": "star-app",
+      "username": "root",
+      "name": "planetscale",
+      "password": ""
+    }
+  ]
+}
