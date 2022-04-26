@@ -1,14 +1,9 @@
-import React from 'react'
+import React from "react";
 
-interface MainProps {
-
-}
+interface MainProps {}
 
 export const Main: React.FC<MainProps> = ({}) => {
-    return (
+  return <div></div>;
+};
 
-        );
-}
-
-
-export default Main
+export default Main;
