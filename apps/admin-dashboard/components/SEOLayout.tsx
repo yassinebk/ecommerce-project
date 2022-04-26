@@ -1,6 +1,6 @@
 import { Box, HStack } from "@chakra-ui/react";
 import Head from "next/head";
-import React, { ReactNode } from "react";
+import React, { Children, ReactNode } from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
@@ -18,12 +18,13 @@ export type Description = {
   content: string;
 };
 
-export const SimpleLayout: React.FC<LayoutProps> = ({
+export const SEOLayout: React.FC<LayoutProps> = ({
   hideFooter,
   normalNavbar,
   seo,
   description,
   title,
+  children,
 }) => {
   return (
     <>
@@ -35,16 +36,6 @@ export const SimpleLayout: React.FC<LayoutProps> = ({
         ></meta>
         <title>{title}</title>
         <meta name={description.name} content={description.content}></meta>
-        <link
-          rel="icon"
-          type="image/x-icon"
-          href="https://example.com/favicon.ico"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          href="https://example.com/favicon.png"
-        />
 
         {/* General SEO */}
         {seo}
@@ -53,7 +44,7 @@ export const SimpleLayout: React.FC<LayoutProps> = ({
         {normalNavbar && <Navbar />}
         <HStack>
           {!normalNavbar && <Sidebar children={""} />}
-          <main></main>
+          <main>{children}</main>
         </HStack>
         {!hideFooter && <Footer />}
       </Box>
@@ -61,4 +52,4 @@ export const SimpleLayout: React.FC<LayoutProps> = ({
   );
 };
 
-export default SimpleLayout;
+export default SEOLayout;

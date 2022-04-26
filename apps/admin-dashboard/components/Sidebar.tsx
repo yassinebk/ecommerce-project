@@ -1,29 +1,12 @@
-import React, { ReactNode } from "react";
 import {
-  IconButton,
-  Box,
-  CloseButton,
-  Flex,
-  Icon,
-  useColorModeValue,
-  Link,
-  Drawer,
-  DrawerContent,
-  Text,
-  useDisclosure,
-  BoxProps,
-  FlexProps,
+  Box, BoxProps, CloseButton, Drawer,
+  DrawerContent, Flex, FlexProps, Icon, IconButton, Link, Text, useColorModeValue, useDisclosure
 } from "@chakra-ui/react";
-import {
-  FiHome,
-  FiTrendingUp,
-  FiCompass,
-  FiStar,
-  FiSettings,
-  FiMenu,
-} from "react-icons/fi";
+import React, { ReactNode, ReactText } from "react";
 import { IconType } from "react-icons";
-import { ReactText } from "react";
+import {
+  FiCompass, FiHome, FiMenu, FiSettings, FiStar, FiTrendingUp
+} from "react-icons/fi";
 
 interface LinkItemProps {
   name: string;
@@ -31,9 +14,9 @@ interface LinkItemProps {
 }
 const LinkItems: Array<LinkItemProps> = [
   { name: "Home", icon: FiHome },
-  { name: "Trending", icon: FiTrendingUp },
-  { name: "Explore", icon: FiCompass },
-  { name: "Favourites", icon: FiStar },
+  { name: "Products", icon: FiTrendingUp },
+  { name: "Orders", icon: FiCompass },
+  { name: "Users", icon: FiStar },
   { name: "Settings", icon: FiSettings },
 ];
 
@@ -77,7 +60,7 @@ const SidebarContent = ({ onClose, ...rest }: SidebarProps) => {
       bg={useColorModeValue("white", "gray.900")}
       borderRight="1px"
       borderRightColor={useColorModeValue("gray.200", "gray.700")}
-      w={{ base: "full", md: 60 }}
+      w={{ base: "full", md: 64 }}
       pos="fixed"
       h="full"
       {...rest}
