@@ -44,7 +44,7 @@ export const SEOLayout: React.FC<LayoutProps> = ({
         {normalNavbar && <Navbar />}
         <HStack>
           {!normalNavbar && <Sidebar children={""} />}
-          <main>{children}</main>
+          {children}
         </HStack>
         {!hideFooter && <Footer />}
       </Box>

@@ -8,10 +8,14 @@
       "outputs": []
     },
     "dev": {
-      "cache": false
+      "cache": false,
+      "dependsOn": [],
+      "outputs": []
     },
     "format": {
-
+      "outputs": []
+    },
+    "db-start": {
       "outputs": []
     }
   }
