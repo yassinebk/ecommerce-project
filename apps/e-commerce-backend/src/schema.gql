@@ -200,7 +200,7 @@ enum ResultOrderBy {
   DESC
 }
 
-"""The state of an orded"""
+"""role of user"""
 enum Role {
   ADMIN
   CUSTOMER

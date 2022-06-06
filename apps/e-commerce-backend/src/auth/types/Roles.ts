@@ -8,5 +8,5 @@ export enum Role {
 
 registerEnumType(Role, {
   name: 'Role',
-  description: 'The state of an orded',
+  description: 'role of user',
 });

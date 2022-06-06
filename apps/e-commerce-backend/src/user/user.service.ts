@@ -2,9 +2,9 @@ import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
 import { InjectRepository } from '@nestjs/typeorm';
 import * as bcrypt from 'bcrypt';
-import { Role } from 'src/auth/types/Roles';
 import { FindAllInput } from 'src/dto/findAll';
 import { Repository } from 'typeorm';
+import { Role } from '../auth/types/Roles';
 import {
   AddUserBasicInfoInput,
   CreateUserInput,

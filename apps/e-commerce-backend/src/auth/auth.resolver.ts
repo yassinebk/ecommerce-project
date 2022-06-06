@@ -1,6 +1,7 @@
 import { UseGuards } from '@nestjs/common';
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
-import { UpdateUserRefreshTokenInput, User } from 'src/user';
+import { UpdateUserRefreshTokenInput } from '../user';
+import { User } from '../user/entities';
 import { AuthService } from './auth.service';
 import { CreateAuthInput, LoginInput } from './dto';
 import { EmailConfirmationService } from './email-confirmation.service';
