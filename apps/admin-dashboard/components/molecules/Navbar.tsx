@@ -15,9 +15,11 @@ export const Navbar: React.FC<NavbarProps> = ({}) => {
         justifySelf="flex-start"
         alignItems="center"
       >
-        <Box width="150px">
-          <Image src={Logo} height={194} width={259} layout="responsive" />
-        </Box>
+        <NextLink href="/">
+          <Box width="150px" cursor="pointer">
+            <Image src={Logo} height={194} width={259} layout="responsive" />
+          </Box>
+        </NextLink>
         <Container w="10%" />
         <HStack spacing="32px" color="white">
           <NavigationLink route="/" label="Home" />

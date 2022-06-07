@@ -1,9 +1,12 @@
 import { Box } from "@chakra-ui/react";
 import Head from "next/head";
 import React from "react";
+import Footer from "../molecules/Footer";
 import Navbar from "../molecules/Navbar";
 
-interface NoAuthLayoutProps {}
+interface NoAuthLayoutProps {
+  children: any;
+}
 
 export const NoAuthLayout: React.FC<NoAuthLayoutProps> = ({ children }) => {
   return (
@@ -11,13 +14,13 @@ export const NoAuthLayout: React.FC<NoAuthLayoutProps> = ({ children }) => {
       <Head>
         <title>Signup</title>
       </Head>
-      <body>
+      <>
         <Navbar />
         <Box w="100vw" h="fit-content" position="relative">
           {children}
         </Box>
-        {/* <Footer /> */}
-      </body>
+        <Footer />
+      </>
     </>
   );
 };
