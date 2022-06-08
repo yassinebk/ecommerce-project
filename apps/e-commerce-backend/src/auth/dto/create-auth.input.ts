@@ -6,6 +6,7 @@ import {
   MaxLength,
   MinLength,
 } from 'class-validator';
+import { Match } from 'src/common/decorators/Match.decorator';
 
 @InputType()
 export class CreateAuthInput {
@@ -22,7 +23,7 @@ export class CreateAuthInput {
   @Field(() => String)
   password: string;
 
-  @Matches('password')
+  @Match('password')
   @Field(() => String)
   confirmPassword: string;
 }

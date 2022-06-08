@@ -1,4 +1,3 @@
-import { gql, useQuery } from "@apollo/client";
 import {
   Box,
   Button,
@@ -30,22 +29,12 @@ export const Signup: React.FC<signinProps> = ({}) => {
     control,
   } = useForm({ resolver: yupResolver(signup_schema) });
 
-  const { data: findAllCa } = useFindAllCategoriesQuery();
-  const query = useQuery(gql`
-    query FindAllCategories {
-      findAllCategories {
-        categoryId
-      }
-    }
-  `);
+  const [register, { data, loading, error }] = useRegisterMutation();
+  
 
   useEffect(() => {
-    console.log(query.data)
-    console.log(query)
-
-  },[query.data])
-
-  const [register, { data, loading }] = useRegisterMutation();
+    console.log(data, error);
+  }, [data, loading]);
 
   function onSubmit(values) {
     console.log(values);
