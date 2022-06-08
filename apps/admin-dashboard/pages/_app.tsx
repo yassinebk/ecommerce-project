@@ -1,13 +1,17 @@
 import "@fontsource/poppins";
 import "../styles/globals.css";
 import { ChakraProvider } from "@chakra-ui/react";
+import { ApolloProvider } from "@apollo/client";
 import { theme } from "../theming/theme";
+import { client } from "../lib/client";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <ChakraProvider theme={theme}>
-      <Component {...pageProps} />
-    </ChakraProvider>
+    <ApolloProvider client={client} >
+      <ChakraProvider theme={theme}>
+        <Component {...pageProps} />
+      </ChakraProvider>
+</ApolloProvider>
   );
 }
 

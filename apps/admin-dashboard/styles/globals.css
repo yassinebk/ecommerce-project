@@ -17,7 +17,7 @@ a {
 
 .black-bg-img {
   background: url("../public/assets/black-bg.jpg");
-  background-position: center;
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
 }

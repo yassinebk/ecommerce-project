@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "generate": "graphql-codegen",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -15,12 +16,21 @@
     "@emotion/react": "^11.9.0",
     "@emotion/styled": "^11.8.1",
     "@fontsource/poppins": "^4.5.8",
+    "@graphql-codegen/cli": "^2.6.2",
+    "@graphql-codegen/typed-document-node": "^2.2.12",
+    "@graphql-codegen/typescript": "^2.5.0",
+    "@graphql-codegen/typescript-operations": "^2.4.1",
+    "@graphql-codegen/typescript-react-apollo": "^3.2.15",
+    "@hookform/resolvers": "^2.9.0",
     "framer-motion": "^6.3.10",
-    "joi": "^17.6.0",
+    "graphql": "^16.5.0",
     "next": "12.1.6",
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
+    "plugin": "^0.3.3",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "react-hook-form": "^7.31.3",
+    "urql": "^2.2.1",
+    "yup": "^0.32.11",
     "zustand": "^4.0.0-rc.1"
   },
   "devDependencies": {

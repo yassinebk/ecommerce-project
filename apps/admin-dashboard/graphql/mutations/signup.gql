@@ -1,0 +1,11 @@
+mutation Register($registerInput: CreateAuthInput!) {
+  register(registerInput: $registerInput) {
+    message
+    user {
+      email
+      lastSeen
+      createdAt
+      userId
+    }
+  }
+}

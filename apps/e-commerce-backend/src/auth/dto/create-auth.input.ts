@@ -16,7 +16,9 @@ export class CreateAuthInput {
   @IsString()
   @MaxLength(50)
   @MinLength(8)
-  @Matches(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm)
+  @Matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/g, {
+    message: 'Password shoul contain number , uppercase and lowercase letters',
+  })
   @Field(() => String)
   password: string;
 

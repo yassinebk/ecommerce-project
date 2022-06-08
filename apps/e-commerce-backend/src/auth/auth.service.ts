@@ -62,7 +62,7 @@ export class AuthService {
       );
     const user = await this.userService.create(createAuthInput);
 
-    this.emailConfirmationService.sendVerificationEmail(user.email);
+    await this.emailConfirmationService.sendVerificationEmail(user.email);
 
     delete user.hashedPassword;
     delete user.role;

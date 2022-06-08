@@ -108,7 +108,8 @@ type Mutation {
   createOrder(createOrderInput: CreateOrderInput!): Order!
   createProductVariant(createProductInput: CreateProductVariantInput!): ProductVariant!
   createUser(createUserInput: CreateUserInput!): User!
-  register(registerInput: CreateAuthInput!): User!
+  login(loginUserInput: LoginInput!): LoginResponse!
+  register(registerInput: CreateAuthInput!): RegisterRespnse!
   removeCategory(id: Int!): Category!
   removeCategoryFromProduct(categoryId: Int!, genericProductId: Float!): GenericProduct!
   removeGenericProduct(id: Int!): GenericProduct!
@@ -189,9 +190,13 @@ type Query {
   findOneOrderAdmin(id: Int!): Order!
   findOneOrderUser: Order!
   findOneProductVariant(id: Int!): ProductVariant!
-  login(loginUserInput: LoginInput!): LoginResponse!
   refreshToken(refreshTokenInput: UpdateUserRefreshTokenInput!): Tokens!
   user(id: Int!): User!
+}
+
+type RegisterRespnse {
+  message: String!
+  user: User!
 }
 
 """How to order result"""

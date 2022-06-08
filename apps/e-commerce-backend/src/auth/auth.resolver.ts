@@ -1,14 +1,14 @@
 import { UseGuards } from '@nestjs/common';
 import { Args, Mutation, Query, Resolver } from '@nestjs/graphql';
 import { UpdateUserRefreshTokenInput } from '../user';
-import { User } from '../user/entities';
 import { AuthService } from './auth.service';
-import { CreateAuthInput, LoginInput } from './dto';
+import { CreateAuthInput as RegisterInput, LoginInput } from './dto';
 import { EmailConfirmationService } from './email-confirmation.service';
 import { Auth } from './entities/auth.entity';
 import { RtGuard } from './guards';
-import { LoginResponse } from './types/login-response';
 import { Tokens } from './types';
+import { LoginResponse } from './types/login-response';
+import { RegisterRespnse } from './types/registration.response';
 
 @Resolver(() => Auth)
 export class AuthResolver {
@@ -17,15 +17,19 @@ export class AuthResolver {
     private readonly emailConfirmationService: EmailConfirmationService,
   ) {}
 
-  @Query(() => LoginResponse)
+  @Mutation(() => LoginResponse)
   login(@Args('loginUserInput') loginUserInput: LoginInput) {
     return this.authService.login(loginUserInput);
   }
 
-  @Mutation(() => User)
-  async register(@Args('registerInput') registerInput: CreateAuthInput) {
+  @Mutation(() => RegisterRespnse)
+  async register(@Args('registerInput') registerInput: RegisterInput) {
     const user = await this.authService.register(registerInput);
-    return user;
+    delete user.hashedPassword;
+    return {
+      user,
+      message: 'Thank you for registering. Please confirm your email ! ',
+    };
   }
 
   @Query(() => Tokens)
