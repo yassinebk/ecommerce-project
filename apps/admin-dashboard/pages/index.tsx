@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import Head from "next/head";
 import Image from "next/image";
-import NoAuthLayout from "../components/layouts/noAuthLayout";
+import NoAuthLayout from "../components/layouts/NoAuthLayout";
 import HeroImage from "../public/assets/Group.png";
 
 export default function Home() {

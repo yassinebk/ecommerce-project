@@ -1,8 +1,8 @@
 import { Box, Container, Flex, Text, useToken, VStack } from "@chakra-ui/react";
 import { scaleCorrectors } from "framer-motion/types/projection/styles/scale-correction";
 import React from "react";
-import ChakraIcon from "../atoms/Icons/ChakraIcon";
-import NavigationIcon from "./NavigationIcon";
+import ChakraIcon from "../../atoms/Icons/ChakraIcon";
+import NavigationIcon from "../NavigationIcon";
 import useSidebarStore from "./SidebarStore";
 
 interface SidebarProps {}

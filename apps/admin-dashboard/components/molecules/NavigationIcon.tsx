@@ -1,7 +1,7 @@
 import { Fade, HStack, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React, { JSXElementConstructor } from "react";
-import useSidebarStore from "./SidebarStore";
+import useSidebarStore from "./Sidebar/SidebarStore";
 
 interface NavigationIconProps {
   label: string;
@@ -31,7 +31,7 @@ export const NavigationIcon: React.FC<NavigationIconProps> = ({
         <Icon />
         <Fade in={expanded} unmountOnExit>
           <Text
-          w="fit-content"
+            w="fit-content"
             fontSize="xs"
             h="fit-content"
             fontWeight="medium"

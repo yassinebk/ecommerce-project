@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.black-bg-img {
+  background: url("../public/assets/black-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

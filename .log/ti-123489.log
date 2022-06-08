@@ -1,0 +1,17 @@
+[13:51:42.742] Global cache location '/home/askee/.cache/typescript/4.7', safe file path '/home/askee/web-projects/ecommerce-project/apps/admin-dashboard/node_modules/typescript/lib/typingSafeList.json', types map path /home/askee/web-projects/ecommerce-project/apps/admin-dashboard/node_modules/typescript/lib/typesMap.json
+[13:51:42.743] Processing cache location '/home/askee/.cache/typescript/4.7'
+[13:51:42.743] Trying to find '/home/askee/.cache/typescript/4.7/package.json'...
+[13:51:42.744] Finished processing cache location '/home/askee/.cache/typescript/4.7'
+[13:51:42.744] Process id: 123507
+[13:51:42.744] NPM location: /home/askee/.nvm/versions/node/v16.13.0/bin/npm (explicit '--npmLocation' not  provided)
+[13:51:42.744] validateDefaultNpmLocation: false
+[13:51:42.744] Npm config file: /home/askee/.cache/typescript/4.7/package.json
+[13:51:42.744] Updating types-registry npm package...
+[13:51:42.744] Exec: /home/askee/.nvm/versions/node/v16.13.0/bin/npm install --ignore-scripts types-registry@latest
+[13:51:55.981]     Succeeded. stdout:
+    
+    added 1 package, and audited 2 packages in 13s
+
+found 0 vulnerabilities
+
+[13:51:55.981] Updated types-registry npm package
