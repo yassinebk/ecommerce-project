@@ -11,7 +11,7 @@ import {
 } from "@chakra-ui/react";
 import NextLink from "next/link";
 import React from "react";
-import { useForm } from "react-hook-form";
+import { Controller, useForm } from "react-hook-form";
 import { InputWLabel } from "../components/molecules";
 import Footer from "../components/molecules/Footer";
 import Navbar from "../components/molecules/Navbar";
@@ -28,6 +28,7 @@ export const Signin: React.FC<signinProps> = ({}) => {
   const {
     handleSubmit,
     register,
+    control,
     formState: { errors },
   } = useForm();
 
@@ -70,7 +71,7 @@ export const Signin: React.FC<signinProps> = ({}) => {
           <HStack>
             <Text color="gray.200" fontSize="1.25rem">
               {" "}
-              Don't have an account ?{" "}
+              Don&apos;t have an account ?{" "}
             </Text>
             <NextLink href="/signup" passHref>
               <Link color="blue.300">Register</Link>
@@ -82,30 +83,34 @@ export const Signin: React.FC<signinProps> = ({}) => {
             <form onSubmit={handleSubmit(onSubmit)}>
               <VStack spacing="2rem" maxW="500px" px="1rem">
                 {/* <InputWLabel */}
-                <InputWLabel
-                  errors={errors}
+                 <Controller
                   name="email"
-                  label="Email"
-                  inputProps={{ type: "email" }}
-                  register={register}
-                  placeholder="Insert your email"
+                  control={control}
+                  render={({ field }) => (
+                    <InputWLabel
+                      errors={errors}
+                      name="email"
+                      label="Email"
+                      inputProps={{ type: "email", ...field }}
+                      placeholder="Insert your email"
+                    />
+                  )}
                 />
-                <InputWLabel
-                  errors={errors}
-                  name="password"
-                  label="Password"
-                  inputProps={{ type: "password" }}
-                  register={register}
-                  placeholder="password"
+<Controller
+                  name="email"
+                  control={control}
+                  render={({ field }) => (
+                    <InputWLabel
+                      errors={errors}
+                      name="password"
+                      label="Password"
+                      inputProps={{ type: "password", ...field }}
+                      placeholder="password"
+                    />
+                  )}
                 />
-                {/* <InputWLabel
-                  errors={errors}
-                  name="password"
-                  label="Confirm password"
-                  inputProps={{ type: "confirmPassword" }}
-                  register={register}
-                  placeholder="confirm password"
-                /> */}
+                
+                
                 <HStack w="full">
                   <Button
                     colorScheme="blue"

@@ -7,7 +7,7 @@ import {
   HStack,
   Link,
   Text,
-  VStack,
+  VStack
 } from "@chakra-ui/react";
 import { yupResolver } from "@hookform/resolvers/yup";
 import NextLink from "next/link";
@@ -17,7 +17,7 @@ import { InputWLabel } from "../components/molecules";
 import Footer from "../components/molecules/Footer";
 import Navbar from "../components/molecules/Navbar";
 import signup_schema from "../form-schemas/signup_schema";
-import { useFindAllCategoriesQuery, useRegisterMutation } from "../generated";
+import { useRegisterMutation } from "../generated";
 
 interface signinProps {}
 
@@ -25,7 +25,6 @@ export const Signup: React.FC<signinProps> = ({}) => {
   const {
     handleSubmit,
     formState: { errors },
-    watch,
     control,
   } = useForm({ resolver: yupResolver(signup_schema) });
 
@@ -34,14 +33,12 @@ export const Signup: React.FC<signinProps> = ({}) => {
 
   useEffect(() => {
     console.log(data, error);
-  }, [data, loading]);
+  }, [data, loading,error]);
 
   function onSubmit(values) {
-    console.log(values);
     register({ variables: { registerInput: values } });
   }
 
-  watch((values) => console.log(values));
   return (
     <Box w="100vw" minH="100vh" background="black">
       <Navbar />
@@ -147,6 +144,7 @@ export const Signup: React.FC<signinProps> = ({}) => {
                     Signup
                   </Button>
                 </HStack>
+                {error && <HStack>{error.name + error.message}</HStack>}
               </VStack>
             </form>
           </Box>

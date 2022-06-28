@@ -70,6 +70,7 @@ export const NavigationLink = ({ route, label }) => {
   return (
     <NextLink href={route} passHref>
       <Link
+        href={route}
         style={{ textDecoration: "none" }}
         _hover={{ textDecoration: "underline" }}
       >

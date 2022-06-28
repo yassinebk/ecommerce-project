@@ -40,7 +40,10 @@ export class Order {
   orderProducts: OrderProduct[];
 
   @Field(() => User, { nullable: false })
-  @ManyToOne(() => User, (user) => user.orders)
+  @ManyToOne(() => User, (user) => user.orders, {
+    cascade: true,
+    onDelete: 'CASCADE',
+  })
   user: User;
 
   @Field(() => OrderState)

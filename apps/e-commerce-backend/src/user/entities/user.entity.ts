@@ -14,8 +14,6 @@ import {
 } from 'typeorm';
 import { UserBasicInfo } from './userBasicInfo.entity';
 
-
-
 @ObjectType()
 @Entity()
 export class User {

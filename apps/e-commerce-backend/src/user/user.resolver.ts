@@ -48,4 +48,9 @@ export class UserResolver {
   removeUser(@Args('id', { type: () => Int }) id: number) {
     return this.userService.remove(id);
   }
+
+  @Query(() => Boolean, { name: 'resetUsers' })
+  restUsers() {
+    return this.userService.resetUSers();
+  }
 }

@@ -36,8 +36,12 @@ export class UserService {
         parseInt(this.config.get<string>('SALT_ROUNDS')),
       );
       const user = this.userRepository.create({ email, hashedPassword });
-      return this.userRepository.save(user);
+      const newUser = await this.userRepository.save(user);
+      delete newUser.hashedPassword;
+      return newUser;
     } catch (e) {
+      if (e.code === '23505')
+        throw new InternalServerErrorException('Email already exists');
       throw new InternalServerErrorException('Server Failure');
     }
   }
@@ -117,6 +121,11 @@ export class UserService {
     const user = await this.userRepository.findOneOrFail({ where: { email } });
     user.isVerified = true;
     await this.userRepository.save(user);
+    return true;
+  }
+  async resetUSers() {
+    const users = await this.userRepository.find();
+    await this.userRepository.remove(users);
     return true;
   }
 }

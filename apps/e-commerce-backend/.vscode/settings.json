@@ -26,5 +26,6 @@
       "name": "planetscale",
       "password": ""
     }
-  ]
+  ],
+  "jest.jestCommandLine": "yarn test"
 }

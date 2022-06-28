@@ -191,6 +191,7 @@ type Query {
   findOneOrderUser: Order!
   findOneProductVariant(id: Int!): ProductVariant!
   refreshToken(refreshTokenInput: UpdateUserRefreshTokenInput!): Tokens!
+  resetUsers: Boolean!
   user(id: Int!): User!
 }
 

@@ -1,13 +1,7 @@
 import { Field, Int, ObjectType } from '@nestjs/graphql';
 import { Order } from 'src/order/entities';
 import { ProductVariant } from 'src/product/product-variant/entities';
-import {
-  Column,
-  Entity,
-  ManyToOne,
-  OneToOne,
-  PrimaryGeneratedColumn,
-} from 'typeorm';
+import { Column, Entity, ManyToOne, PrimaryGeneratedColumn } from 'typeorm';
 
 @ObjectType()
 @Entity()
@@ -17,7 +11,11 @@ export class OrderProduct {
   orderProductId: number;
 
   @Field(() => ProductVariant)
-  @ManyToOne(() => ProductVariant, { nullable: false })
+  @ManyToOne(() => ProductVariant, {
+    cascade: true,
+    onDelete: 'NO ACTION',
+    nullable: false,
+  })
   productVariant: ProductVariant;
 
   @Field(() => Int, { nullable: true })
@@ -29,6 +27,9 @@ export class OrderProduct {
   quantity: number;
 
   @Field(() => Order, { nullable: false })
-  @ManyToOne(() => Order, (o) => o.orderProducts)
+  @ManyToOne(() => Order, (o) => o.orderProducts, {
+    cascade: true,
+    onDelete: 'CASCADE',
+  })
   currentOrder: Order;
 }
