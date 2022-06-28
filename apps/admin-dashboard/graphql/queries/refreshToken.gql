@@ -1,0 +1,6 @@
+query RefreshToken($refreshTokenInput: UpdateUserRefreshTokenInput!) {
+  refreshToken(refreshTokenInput: $refreshTokenInput) {
+    access_token
+    refresh_token
+  }
+}

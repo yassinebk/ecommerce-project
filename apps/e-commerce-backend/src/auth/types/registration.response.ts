@@ -6,7 +6,6 @@ export class RegisterRespnse {
   @Field(() => User)
   user: Omit<User, 'hashedPassword'>;
 
-    @Field()
-    message:string
+  @Field()
+  message: string;
 }
-

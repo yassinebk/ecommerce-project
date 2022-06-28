@@ -39,4 +39,6 @@ export const InputWLabel: React.FC<InputWLabelProps> = React.forwardRef(
   }
 );
 
+InputWLabel.displayName="InputWLabel";
+
 export default InputWLabel;

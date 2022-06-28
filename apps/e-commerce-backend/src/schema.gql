@@ -190,7 +190,7 @@ type Query {
   findOneOrderAdmin(id: Int!): Order!
   findOneOrderUser: Order!
   findOneProductVariant(id: Int!): ProductVariant!
-  refreshToken(refreshTokenInput: UpdateUserRefreshTokenInput!): Tokens!
+  refreshToken: Tokens!
   resetUsers: Boolean!
   user(id: Int!): User!
 }
@@ -257,11 +257,6 @@ input UpdateUserEmailInput {
 input UpdateUserPasswordInput {
   id: Int!
   password: String!
-}
-
-input UpdateUserRefreshTokenInput {
-  id: Int!
-  refreshToken: String!
 }
 
 """The `Upload` scalar type represents a file upload."""

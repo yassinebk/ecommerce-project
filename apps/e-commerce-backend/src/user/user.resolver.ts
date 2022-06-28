@@ -10,7 +10,7 @@ import {
 import { User } from './entities/user.entity';
 import { UserService } from './user.service';
 
-@UseGuards(AtGuard, AdminGuard)
+// @UseGuards(AtGuard, AdminGuard)
 @Resolver(() => User)
 export class UserResolver {
   constructor(private readonly userService: UserService) {}

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import { Test, TestingModule } from '@nestjs/testing';
 import { FindAllInput } from '../dto/findAll';
 import { CategoryResolver } from './category.resolver';
@@ -15,19 +16,19 @@ describe('CategoryResolver', () => {
   const mockCategoryService = {
     create: jest
       .fn()
-      .mockImplementation((createCategoryInput: CreateCategoryInput) => ({
+      .mockImplementation((_createCategoryInput: CreateCategoryInput) => ({
         title: 'hello',
         id: '1',
       })),
-    findOneById: jest.fn().mockImplementation((id: number) => mockData[0]),
+    findOneById: jest.fn().mockImplementation((_id: number) => mockData[0]),
     findAll: jest
       .fn()
-      .mockImplementation((findAllInput: FindAllInput) => mockData),
+      .mockImplementation((_findAllInput: FindAllInput) => mockData),
     remove: jest.fn().mockImplementation((id: number) => mockData[id]),
     updateTitle: jest
       .fn()
       .mockImplementation(
-        (updateCategoryInput: UpdateCategoryInput) => mockData[1],
+        (_updateCategoryInput: UpdateCategoryInput) => mockData[1],
       ),
   };
 

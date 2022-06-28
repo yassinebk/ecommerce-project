@@ -13,6 +13,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import NextLink from "next/link";
 import React, { useEffect } from "react";
 import { Controller, useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import { InputWLabel } from "../components/molecules";
 import Footer from "../components/molecules/Footer";
 import Navbar from "../components/molecules/Navbar";
@@ -28,7 +29,10 @@ export const Signup: React.FC<signinProps> = ({}) => {
     control,
   } = useForm({ resolver: yupResolver(signup_schema) });
 
-  const [register, { data, loading, error }] = useRegisterMutation();
+  const [register, { data, loading, error }] = useRegisterMutation({onError(error) {
+   console.log(error)
+   toast.error(error.message) 
+  },});
   
 
   useEffect(() => {
@@ -144,7 +148,7 @@ export const Signup: React.FC<signinProps> = ({}) => {
                     Signup
                   </Button>
                 </HStack>
-                {error && <HStack>{error.name + error.message}</HStack>}
+                <Text color="white" bg="white">{error && <HStack>{error.name + error.message}</HStack>}</Text>
               </VStack>
             </form>
           </Box>

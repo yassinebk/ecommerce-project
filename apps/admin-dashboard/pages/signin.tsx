@@ -1,17 +1,14 @@
 import {
-  Box,
-  Grid,
+  Box, Button, Grid,
   GridItem,
   Heading,
-  HStack,
-  Text,
-  Link,
-  VStack,
-  Button,
+  HStack, Link, Text, VStack
 } from "@chakra-ui/react";
 import NextLink from "next/link";
+import { useRouter } from "next/router";
 import React from "react";
 import { Controller, useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import { InputWLabel } from "../components/molecules";
 import Footer from "../components/molecules/Footer";
 import Navbar from "../components/molecules/Navbar";
@@ -20,14 +17,27 @@ import { useLoginMutation } from "../generated";
 interface signinProps {}
 
 export const Signin: React.FC<signinProps> = ({}) => {
-  const [login, { data, error, loading }] = useLoginMutation();
+  const router = useRouter();
+  const [login, { data, error, loading }] = useLoginMutation({
+    onQueryUpdated(query) {
+      console.log(query)
+    },
+    onCompleted(data) {
+      localStorage.setItem("refresh_token", data.login.refresh_token);
+      localStorage.setItem("access_token", data.login.access_token);
+      router.push("/dashboard")
+      
+    },
+    onError(error) {
+      toast.error(error.message)
+    }
+  });
 
   function onSubmit(values) {
-    login(values);
+    login({variables:{loginUserInput:values}});
   }
   const {
     handleSubmit,
-    register,
     control,
     formState: { errors },
   } = useForm();
@@ -97,7 +107,7 @@ export const Signin: React.FC<signinProps> = ({}) => {
                   )}
                 />
 <Controller
-                  name="email"
+                  name="password"
                   control={control}
                   render={({ field }) => (
                     <InputWLabel
@@ -110,9 +120,9 @@ export const Signin: React.FC<signinProps> = ({}) => {
                   )}
                 />
                 
-                
                 <HStack w="full">
                   <Button
+                  type="submit"
                     colorScheme="blue"
                     size="lg"
                     variant="outline"

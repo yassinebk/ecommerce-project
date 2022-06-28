@@ -340,6 +340,7 @@ export type Query = {
   findOneOrderUser: Order;
   findOneProductVariant: ProductVariant;
   refreshToken: Tokens;
+  resetUsers: Scalars['Boolean'];
   user: User;
 };
 
@@ -516,6 +517,13 @@ export type FindAllCategoriesQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type FindAllCategoriesQuery = { __typename?: 'Query', findAllCategories: Array<{ __typename?: 'Category', categoryId?: number | null }> };
 
+export type RefreshTokenQueryVariables = Exact<{
+  refreshTokenInput: UpdateUserRefreshTokenInput;
+}>;
+
+
+export type RefreshTokenQuery = { __typename?: 'Query', refreshToken: { __typename?: 'Tokens', access_token: string, refresh_token: string } };
+
 
 export const LoginDocument = gql`
     mutation Login($loginUserInput: LoginInput!) {
@@ -629,3 +637,39 @@ export function useFindAllCategoriesLazyQuery(baseOptions?: Apollo.LazyQueryHook
 export type FindAllCategoriesQueryHookResult = ReturnType<typeof useFindAllCategoriesQuery>;
 export type FindAllCategoriesLazyQueryHookResult = ReturnType<typeof useFindAllCategoriesLazyQuery>;
 export type FindAllCategoriesQueryResult = Apollo.QueryResult<FindAllCategoriesQuery, FindAllCategoriesQueryVariables>;
+export const RefreshTokenDocument = gql`
+    query RefreshToken($refreshTokenInput: UpdateUserRefreshTokenInput!) {
+  refreshToken(refreshTokenInput: $refreshTokenInput) {
+    access_token
+    refresh_token
+  }
+}
+    `;
+
+/**
+ * __useRefreshTokenQuery__
+ *
+ * To run a query within a React component, call `useRefreshTokenQuery` and pass it any options that fit your needs.
+ * When your component renders, `useRefreshTokenQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useRefreshTokenQuery({
+ *   variables: {
+ *      refreshTokenInput: // value for 'refreshTokenInput'
+ *   },
+ * });
+ */
+export function useRefreshTokenQuery(baseOptions: Apollo.QueryHookOptions<RefreshTokenQuery, RefreshTokenQueryVariables>) {
+        const options = {...defaultOptions, ...baseOptions}
+        return Apollo.useQuery<RefreshTokenQuery, RefreshTokenQueryVariables>(RefreshTokenDocument, options);
+      }
+export function useRefreshTokenLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<RefreshTokenQuery, RefreshTokenQueryVariables>) {
+          const options = {...defaultOptions, ...baseOptions}
+          return Apollo.useLazyQuery<RefreshTokenQuery, RefreshTokenQueryVariables>(RefreshTokenDocument, options);
+        }
+export type RefreshTokenQueryHookResult = ReturnType<typeof useRefreshTokenQuery>;
+export type RefreshTokenLazyQueryHookResult = ReturnType<typeof useRefreshTokenLazyQuery>;
+export type RefreshTokenQueryResult = Apollo.QueryResult<RefreshTokenQuery, RefreshTokenQueryVariables>;

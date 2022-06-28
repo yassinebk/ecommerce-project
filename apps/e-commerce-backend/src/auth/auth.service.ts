@@ -63,7 +63,6 @@ export class AuthService {
     const user = await this.userService.create(createAuthInput);
 
     await this.emailConfirmationService.sendVerificationEmail(user.email);
-    
 
     delete user.hashedPassword;
     delete user.role;
@@ -91,31 +90,18 @@ export class AuthService {
       .then(() => true);
   }
 
-  async refreshTokens(
-    refreshTokenInput: UpdateUserRefreshTokenInput,
-  ): Promise<Tokens> {
-    const user = await this.userService.findOne(refreshTokenInput.id);
+  async refreshTokens(currentUser: JwtPayload): Promise<Tokens> {
+    const user = await this.userService.findOne(currentUser.sub);
     if (!user || !user.refreshToken) throw new ForbiddenException();
 
-    console.log(refreshTokenInput.refreshToken, user.refreshToken);
-    // const rtMatches = await bcrypt.compare(
-    //   refreshTokenInput.refreshToken,
-    //   user.refreshToken,
-    // );
-    const rtMatches = this.jwtService.verify(refreshTokenInput.refreshToken, {
-      publicKey: this.config.get('RT_SECRET'),
-    });
-
-    if (!rtMatches) throw new ForbiddenException('Access Denied');
-
     const tokens = await this.getTokens(
-      refreshTokenInput.id,
+      currentUser.sub,
       user.email,
       user.role,
       user.isVerified,
     );
     await this.userService.updateRefreshToken({
-      id: refreshTokenInput.id,
+      id: currentUser.sub,
       refreshToken: tokens.refresh_token,
     });
 
