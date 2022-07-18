@@ -16,6 +16,7 @@
 - Forms for modifying the store view ❌ 
 - About ❌
 - Better Documentation ❌
+- SEO Optimization ❌
 
 
 ## What's inside?
